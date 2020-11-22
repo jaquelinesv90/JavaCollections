@@ -2,9 +2,11 @@ package com.collections.arrayList;
 
 import java.util.ArrayList;
 
-//implementation of List interface
-//dynamic array for storing the elements
-//no size limit
+/*
+ * implementation of List interface
+ * dynamic array for storing the elements
+ * no size limit
+ */
 public class Main {
 	
 	public static void main(String[] args) {
