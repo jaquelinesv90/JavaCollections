@@ -11,6 +11,7 @@ public class Main {
 	
 	public static void main(String[] args) {
 		ArrayList al = new ArrayList();
+		ArrayList<Integer> array = new ArrayList<Integer>();
 		
 		al.add("Sachin");
 		al.add("Rahul");
