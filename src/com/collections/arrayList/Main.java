@@ -1,6 +1,7 @@
 package com.collections.arrayList;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /*
  * implementation of List interface
@@ -10,18 +11,28 @@ import java.util.ArrayList;
 public class Main {
 	
 	public static void main(String[] args) {
-		ArrayList al = new ArrayList();
 		ArrayList<Integer> array = new ArrayList<Integer>();
 		
-		al.add("Sachin");
-		al.add("Rahul");
-		al.add(10);
+		array.add(10);
+		array.add(120);
 		
-		String s1 = (String)al.get(0);
-		String s2 = (String)al.get(1);
+		//Indexed for loop iteration - iteration 01
+		for(int i=0;i< array.size(); i++) {
+			System.out.println(array.get(i));
+		}
 		
-		Integer s3 = (Integer)al.get(2);
+		//Indexed for loop iteration - iteration 02
+		for(Integer ar : array) {
+			System.out.println(ar);
+		}
+		
+		//removing the last element
+		array.remove(array.size() -1);
+		
+		//removing the first element
+		array.remove(0);
+		
+		//List interface
+		List<String> list = new ArrayList<String>();
 	}
-	
-	
 }
