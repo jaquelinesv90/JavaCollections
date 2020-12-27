@@ -4,9 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /*
- * implementation of List interface
- * dynamic array for storing the elements
- * no size limit
+ * ArrayList: is not synchronized,
+ * no size limit and increases size 
+ * by 50%
+ * 
  */
 public class Main {
 	
