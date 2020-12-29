@@ -22,8 +22,9 @@ public class Main {
 		map.put(1,"Hawaii");
 		
 		String text = map.get(4);
-		
 		System.out.println("text "+text);
+		
+		
 		//method keySet returns a Set, it means a collection of unique elements 
 		for(Integer m : map.keySet()) {
 			System.out.println(m + " ");
