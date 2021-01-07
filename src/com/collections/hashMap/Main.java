@@ -1,6 +1,7 @@
 package com.collections.hashMap;
 
 import java.util.HashMap;
+import java.util.Map;
 
 /* An object that maps keys to values
  * 
@@ -8,6 +9,13 @@ import java.util.HashMap;
  * 
  * K - the type of keys maintened by this map
  * V - the type of mapped values 
+ * 
+ * - HashMap stores only object references.So primitives must be
+ * used with their corresponding wrapper classes.
+ * - Implements Cloneable and Serializable
+ * 
+ * 
+ * 
  */
 public class Main {
 	
@@ -28,6 +36,13 @@ public class Main {
 		//method keySet returns a Set, it means a collection of unique elements 
 		for(Integer m : map.keySet()) {
 			System.out.println(m + " ");
+		}
+		
+		for(Map.Entry<Integer, String> entry : map.entrySet()) {
+			int key = entry.getKey();
+			String value = entry.getValue();
+			
+			System.out.println(key + ":" + value);
 		}
 	}
 }
