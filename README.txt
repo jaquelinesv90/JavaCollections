@@ -13,3 +13,5 @@ public interface Collection<E> extends Iterable<E>
 - toArray
 - add()
 - remove()
+
+- Needs of Collections Framework
